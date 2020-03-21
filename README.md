@@ -9,6 +9,8 @@ Instruction | Type | Opcode | Funct
 ----------- | ---- | ------ | -----
 sll | R | 0 | 00
 srl | R | 0 | 02
+
+
 add | R | 0 | 20
 sub | R | 0 | 22
 and | R | 0 | 24
