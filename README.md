@@ -10,8 +10,6 @@ Instruction | Type | Opcode | Funct
 ----------- | ---- | ------ | ----- 
 sll | R | 0 | 00 
 srl | R | 0 | 02 
-
-
 add | R | 0 | 20
 sub | R | 0 | 22
 and | R | 0 | 24
@@ -27,8 +25,21 @@ jal | J | 3 | N/A
 jr | R | 0 | 8
 
 * Floating Point Unit (FPU) Instructions
-Instruction | Type | Opcode | Funct
------------ | ---- | ------ | -----
+
+Instruction | Type | Opcode (Hex) | FMT(Hex) | Func code (Hex)
+------| ---- | ------ | ----- | -----
+add.s | FR | 11 | 10 | 00
+sub.s | FR | 11 | 10 | 01
+mul.s | FR | 11 | 10 | 02
+div.s | FR | 11 | 10 | 03
+lwcl | I | 31 | N/A | N/A
+swcl | I | 39 | N/A | N/A
+c.eq.s | FR | 11 | 10 | 32
+bclt | FI | 11 | 8 | N/A
+add.d | FR | 11 | 11 | 00
+sub.d | FR | 11 | 11 | 01
+ldcl | I | 35 | N/A | N/A
+sdcl | I | 3D | N/A | N/A
  
 
 The architecture 
