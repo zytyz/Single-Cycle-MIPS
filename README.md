@@ -5,10 +5,11 @@ Microprocessor without Interlocked Pipeline Stages (MIPS) is a widely used instr
 ## Instruction Set
 The instructions supported are listed as follows:
 * Original Instructions
-| Instruction | Type | Opcode | Funct |
-| ----------- | ---- | ------ | ----- | 
-| sll | R | 0 | 00 |
-| srl | R | 0 | 02 |
+
+Instruction | Type | Opcode | Funct
+----------- | ---- | ------ | ----- 
+sll | R | 0 | 00 
+srl | R | 0 | 02 
 
 
 add | R | 0 | 20
