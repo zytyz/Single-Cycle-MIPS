@@ -45,6 +45,18 @@ sdcl | I | 3D | N/A | N/A
 ## The architecture 
 The framework can be shown as follows, while both the register file and ALU have 2 parts, one for the original instructions and the other for the FPU.
 ![image](/img/MIPS.png "MIPS architecture")
-<center>Centered text</center>
+![image](/img/register.png "Register architecture")
+![image](/img/ALU.png "ALU architecture")
+
+## Simulation and Synthesis
+All the RTL-Level verilog code are in ```SingleCycleMIPS.v``` and ```SingleCycleMIPS_FPU.v```, while the former only executes original instructions and the latter does both.
+
+1. RTL-simulation
+```ncverilog tb.v SingleCycleMIPS.v +define+Baseline +access+r```
+```ncverilog tb.v SingleCycleMIPS_FPU.v +define+Baseline +access+r```
+2. Synthesis
+```dc_shell run.tcl```
+3. Gate-level simulation
+```ncverilog tb.v SingleCycleMIPS_syn.v tsmc13.v +define+Baseline+SDF +access+r```
 
 
