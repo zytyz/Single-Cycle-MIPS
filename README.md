@@ -42,7 +42,9 @@ ldcl | I | 35 | N/A | N/A
 sdcl | I | 3D | N/A | N/A
  
 
-The architecture 
+## The architecture 
+The framework can be shown as follows, while both the register file and ALU have 2 parts, one for the original instructions and the other for the FPU.
 ![image](/img/MIPS.png "MIPS architecture")
+<center>Centered text</center>
 
 
